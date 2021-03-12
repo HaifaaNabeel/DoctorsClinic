@@ -1,0 +1,14 @@
+C:\xampp\htdocs\DoctorsClinic\DoctorsClinicApi\bin\Debug\netcoreapp2.1\DoctorsClinicApi.deps.json
+C:\xampp\htdocs\DoctorsClinic\DoctorsClinicApi\bin\Debug\netcoreapp2.1\DoctorsClinicApi.runtimeconfig.json
+C:\xampp\htdocs\DoctorsClinic\DoctorsClinicApi\bin\Debug\netcoreapp2.1\DoctorsClinicApi.runtimeconfig.dev.json
+C:\xampp\htdocs\DoctorsClinic\DoctorsClinicApi\bin\Debug\netcoreapp2.1\DoctorsClinicApi.dll
+C:\xampp\htdocs\DoctorsClinic\DoctorsClinicApi\obj\Debug\netcoreapp2.1\DoctorsClinicApi.csprojAssemblyReference.cache
+C:\xampp\htdocs\DoctorsClinic\DoctorsClinicApi\obj\Debug\netcoreapp2.1\DoctorsClinicApi.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\DoctorsClinic\DoctorsClinicApi\obj\Debug\netcoreapp2.1\DoctorsClinicApi.RazorAssemblyInfo.cache
+C:\xampp\htdocs\DoctorsClinic\DoctorsClinicApi\obj\Debug\netcoreapp2.1\DoctorsClinicApi.RazorAssemblyInfo.cs
+C:\xampp\htdocs\DoctorsClinic\DoctorsClinicApi\obj\Debug\netcoreapp2.1\DoctorsClinicApi.AssemblyInfoInputs.cache
+C:\xampp\htdocs\DoctorsClinic\DoctorsClinicApi\obj\Debug\netcoreapp2.1\DoctorsClinicApi.AssemblyInfo.cs
+C:\xampp\htdocs\DoctorsClinic\DoctorsClinicApi\obj\Debug\netcoreapp2.1\DoctorsClinicApi.RazorTargetAssemblyInfo.cache
+C:\xampp\htdocs\DoctorsClinic\DoctorsClinicApi\obj\Debug\netcoreapp2.1\DoctorsClinicApi.dll
+C:\xampp\htdocs\DoctorsClinic\DoctorsClinicApi\obj\Debug\netcoreapp2.1\DoctorsClinicApi.pdb
+C:\xampp\htdocs\DoctorsClinic\DoctorsClinicApi\bin\Debug\netcoreapp2.1\DoctorsClinicApi.pdb
