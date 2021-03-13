@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DoctorsClinicApi.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace DoctorsClinicApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
@@ -21,6 +23,7 @@ namespace DoctorsClinicApi.Controllers
         }
 
         // GET api/values
+        [AllowAnonymous]
         [HttpGet]
         public async Task<ActionResult> GetUsers()
         {

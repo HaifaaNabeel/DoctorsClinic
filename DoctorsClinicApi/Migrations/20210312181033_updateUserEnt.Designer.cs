@@ -3,14 +3,16 @@ using System;
 using DoctorsClinicApi.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DoctorsClinicApi.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20210312181033_updateUserEnt")]
+    partial class updateUserEnt
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,19 +23,11 @@ namespace DoctorsClinicApi.Migrations
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("brithday");
-
-                    b.Property<string>("email");
-
-                    b.Property<string>("gender");
-
                     b.Property<string>("name");
 
                     b.Property<byte[]>("passwordHash");
 
                     b.Property<byte[]>("passwordSalt");
-
-                    b.Property<int>("phone");
 
                     b.HasKey("id");
 
