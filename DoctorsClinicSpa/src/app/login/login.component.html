@@ -1,0 +1,83 @@
+
+  <div class="container-fluid bg-light my-5 py-5">
+    <div class="container">
+        <div class='row'>
+            <div class="container">
+                <div class='row container shadow-sm  bg-white nopaddingnomagrin border border-primary'>
+
+                    <div class='col-sm-12 col-md-6 col-lg-6 btn-primary ' style='background-color:rgb(79, 157, 213);'>
+                        <div class='row'>
+                            <div class=' py-3 mx-auto'>
+
+                                <a href="#"><img src="}" height="75vw"
+                                        alt="" /></a>
+
+                                <h3 class=' py-3'> </h3>
+                            </div>
+                            <div class="container text-center">
+                                <p></p>
+                                <div class="mx-auto py-2" style='direction:ltr;'>
+                                    <div class="mx-auto py-2" style='direction:ltr;'>
+                                        
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class='col-sm-12 col-md-6 col-lg-6'><br>
+                        <div class='col-sm-12 ' style='background-color:white'>
+                                <!-- <div class="  alert alert-success" role='alert'>
+                                </div> -->
+                            <form (ngSubmit)="login()"  #Login="ngForm"  *ngIf="loggedIn" >
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name"
+                                    [(ngModel)]="model.name"
+                                        placeholder=" " name="name" required>
+                                   <!--  <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback"></div> -->
+                                </div>
+                                <div class="form-group">
+                                  <label for="password">Password</label>
+                                  <input type="password" class="form-control" id="password"
+                                  [(ngModel)]="model.password"
+                                      placeholder="" name="password" required>
+                                 <!--  <div class="valid-feedback"></div>
+                                  <div class="invalid-feedback"></div> -->
+                              </div>
+                                <div class="form-group float-right">
+                                    <button [disabled]="!Login.valid"  type="submit" class="btn btn-primary" value="">
+                                      Login
+                                    </button>
+                                </div>
+                            </form> 
+                            
+                            <!-- <div *ngIf="loggedIn" >
+                              <div class="form-group">
+                                  <label for="name">Logout</label>
+                                  <button class="form-control" (click)="loggedOut()" *ngIf="loggedIn" ><i class="btn1">Logout </i><i class="btn1 fa fa-sign-out"></i></button>
+                                  <div class="valid-feedback"></div>
+                                  <div class="invalid-feedback"></div> 
+                              </div>
+                              
+                          </div>-->
+                            <br>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

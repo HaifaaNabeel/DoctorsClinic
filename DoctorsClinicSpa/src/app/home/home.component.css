@@ -1,0 +1,10 @@
+.second-layer{
+    z-index:1;
+    position: absolute;
+    height: 40vw;
+    width: 100%;
+    background-color:black; 
+    opacity:.2;
+    color:black;
+          }
+          

@@ -13,7 +13,8 @@ namespace DoctorsClinicApi.DTOs
         [EmailAddress]
         public string email { get; set; }
 
-        [Required]
+        //[Phone]
+         [Required]
         public int phone { get; set; }
 
         [Required]
