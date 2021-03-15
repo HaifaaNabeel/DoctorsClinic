@@ -11,6 +11,7 @@ namespace DoctorsClinicApi.Models
         public string gender { get; set; }
         public int phone  { get; set; }
         public string brithday  { get; set; }
+        public string role  { get; set; }
 
     }
 }

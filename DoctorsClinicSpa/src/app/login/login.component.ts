@@ -21,8 +21,10 @@ model :any={};
   }
 
    loggedIn(){
-   const token=localStorage.getItem('token');
-   return !!token 
+    /*const token=localStorage.getItem('token');
+   return !!token */
+   return this.authSerives.loggedIn();
+ 
    
   } /**/
 

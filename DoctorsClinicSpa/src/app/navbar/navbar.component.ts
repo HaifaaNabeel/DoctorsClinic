@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../_services/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   model:any={};
-  authSerives: any;
+  //authSerives: any;
   signupMode:boolean=false;
   loginMode:boolean=false;
   homeMode:boolean=true;
-  constructor() { }
+  constructor(public authSerives:AuthService) { }
 
   ngOnInit() {
-  }
+  } 
 
  /*  login(){
     //console.log(this.model)
@@ -40,8 +41,9 @@ export class NavbarComponent implements OnInit {
   }
 
   loggedIn(){
-    const token=localStorage.getItem('token');
-    return !! token 
+   /* const token=localStorage.getItem('token');
+    return !! token  */
+     return this.authSerives.loggedIn();
     
    }
  

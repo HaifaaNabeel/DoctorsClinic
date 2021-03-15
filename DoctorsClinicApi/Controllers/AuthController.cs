@@ -50,6 +50,7 @@ namespace DoctorsClinicApi.Controllers
         [HttpPost("login")]
         public async Task<ActionResult> Login(UserLogin userLogin)
         {
+           
             var nameFromR = await _repo.Login(userLogin.name.ToLower(), userLogin.password);
             if (nameFromR == null) return Unauthorized();
             ///////////register in token and in appsetting

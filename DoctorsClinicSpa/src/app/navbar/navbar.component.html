@@ -4,7 +4,7 @@
   <!-- Brand -->
   <a class="navbar-brand" href="#">
     <i class="fa fa-circle" style="color:te al;"></i>
-    <i class="fa fa-circle" style="color:rgba(194, 194, 55, 0.966);"></i>
+    <i class="fa fa-circle" style="color:blue;"></i>
     <i class="fa fa-circle" style="color:tomato;"></i>
     <span class="name1"> Doctors </span><span class="name2"> Clinic </span>
     <span class=" fas fa-feather" style="color: white;"></span></a>
@@ -20,9 +20,7 @@
       <li class="nav-item px-4">
         <a class="nav-link menu active " href="#" (click)="homeToggle()">Home</a>
       </li>
-      <li class="nav-item px-4">
-        <a class="nav-link menu" href="#">Doctors</a>
-      </li>
+      
 <!--       <li class="nav-item">
         <a class="nav-link menu" href="#">Blog</a>
       </li> -->
@@ -40,7 +38,12 @@
       <li class="nav-item px-4">
         <a class="nav-link menu" href="#">contact us</a>
       </li>
-      
+      <li class="nav-item px-4">
+        <a class="nav-link menu" href="#" *ngIf="loggedIn()">Doctors</a>
+      </li>
+      <li class="nav-item px-4">
+        <a class="nav-link menu" href="#" *ngIf="loggedIn()">Your Booking</a>
+      </li>
     </ul>
   </div>
   
@@ -56,7 +59,7 @@
 
     <ul class="navbar-nav" >
       <li class="nav-item " >
-        <a class="nav-link btn" *ngIf="loggedIn()" href="#"><i class=" btn1">Porfile </i><i class="btn1 fa fa-user-o"></i></a>
+        <a class="nav-link btn" *ngIf="loggedIn()" href="#"><i class=" btn1">Porfile - {{authSerives.decodedToken?.unique_name |titlecase}} </i><i class="btn1 fa fa-user-o"></i></a>
       </li>
       <li class="nav-item">
         <a class="nav-link btn" *ngIf="loggedIn()"  (click)="loggedOut()"><i class="btn1">Logout </i><i class="btn1 fa fa-sign-out"></i></a>
