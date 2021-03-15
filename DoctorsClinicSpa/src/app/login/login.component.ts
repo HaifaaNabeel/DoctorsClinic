@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../_services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,7 @@ import { AuthService } from '../_services/auth.service';
 })
 export class LoginComponent implements OnInit {
 model :any={};
-  constructor(private authSerives :AuthService) { }
+  constructor(private authSerives :AuthService,private route:Router) { }
 
   ngOnInit() {
   }
@@ -16,9 +17,12 @@ model :any={};
     //console.log(this.model)
     this.authSerives.login(this.model).subscribe(
       next=>{console.log("you are loggedIn")},
-      error=>{console.log('you are not login ')}
+      error=>{console.log('you are not login ')},
+      ()=>{this.route.navigate(['/Home'])}
     )
+    
   }
+
 
    loggedIn(){
     /*const token=localStorage.getItem('token');
@@ -31,5 +35,6 @@ model :any={};
    /*loggedOut(){
     localStorage.removeItem('token');
     console.log("You are logged out ")
+    
   } */
 }

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {HttpClientModule  } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
 import { CarouselModule } from 'ngx-bootstrap';
+import { RouterModule } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
@@ -17,9 +18,14 @@ import { DoctorLisComponent } from './doctorLis/doctorLis.component';
 import { BookingListComponent } from './bookingList/bookingList.component';
 import { BookingDetailsComponent } from './bookingDetails/bookingDetails.component';
 import { GetBookComponent } from './getBook/getBook.component';
+import { appRoutes } from './routes';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { ProfileComponent } from './profile/profile.component';
+import { AuthUsersGuard } from './_guards/auth-users.guard';
 
 @NgModule({
-  declarations: [										
+  declarations: [													
     AppComponent,
       UserComponent,
       NavbarComponent,
@@ -30,15 +36,23 @@ import { GetBookComponent } from './getBook/getBook.component';
       DoctorLisComponent,
       BookingListComponent,
       BookingDetailsComponent,
-      GetBookComponent
+      GetBookComponent,
+      AboutComponent,
+      ContactComponent,
+      ProfileComponent
    ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    RouterModule.forRoot(appRoutes)
+
   ],
-  providers: [AuthService],
-  bootstrap: [AppComponent]
+  providers: [
+    AuthService,
+    AuthUsersGuard
+  ],
+  bootstrap: [AppComponent] 
 })
 export class AppModule { }
